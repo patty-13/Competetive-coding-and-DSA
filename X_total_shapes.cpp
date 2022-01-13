@@ -1,4 +1,4 @@
-// 11. X Total Shapes 
+// 11. X Total Shapes
 // Medium Accuracy: 59.94% Submissions: 11537 Points: 4
 // Given  a grid of n*m consisting of O's and X's. The task is to find the number of 'X' total shapes.
 // Note: 'X' shape consists of one or more adjacent X's (diagonals not included).
@@ -17,7 +17,7 @@ class Solution
 {
     public:
     void dfs(vector<vector<char>>&grid, int i, int j, int n, int m){
-        // Base case 
+        // Base case
         if (i >= n || j >= m || i < 0 || j < 0 || grid[i][j] != 'X')    return;
 
         grid[i][j] = '0';
@@ -25,7 +25,7 @@ class Solution
         dfs(grid, i, j + 1, n, m),dfs(grid, i + 1, j, n, m);
     }
     //Function to find the number of 'X' total shapes.
-    int xShape(vector<vector<char>>& grid) 
+    int xShape(vector<vector<char>>& grid)
     {
         int count = 0;
         int n = grid.size();
@@ -39,3 +39,4 @@ class Solution
         return count;
     }
 };
+
