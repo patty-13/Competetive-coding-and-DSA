@@ -17,17 +17,15 @@
 // (4, 5) -> (5, 3) -> (3, 2) -> (1, 1).
  
 
- 
-
 // Your Task:
 // You don't need to read input or print anything. Your task is to complete the function minStepToReachTarget() which takes the inital position of Knight (KnightPos), the target position of Knight (TargetPos) and the size of the chess board (N) as an input parameters and returns the minimum number of steps required by the knight to reach from its current position to the given target position.
 
  
-
+ 
 // Expected Time Complexity: O(N2).
 // Expected Auxiliary Space: O(N2).
 
- 
+
 
 // Constraints:
 // 1 <= N <= 1000
